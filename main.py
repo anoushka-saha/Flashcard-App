@@ -34,7 +34,7 @@ def x_clicked():
 def check_clicked():
     to_learn.remove(current_card)
     data = pandas.DataFrame(to_learn)
-    data.to_csv("data/words_left.csv")
+    data.to_csv("data/words_left.csv", index = False)
     x_clicked()
 
 #Flip card function
